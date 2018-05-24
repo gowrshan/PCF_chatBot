@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form method='post'>
+        <h3>Please Enter Enviromental details below</h3>
+		API_KEY: <input type='text' name='API_Key'><br>
+        USERName: <input type='text' name='USERName'><br>
+		Password: <input type='password' name='Password'><br>
+		<input type="submit" name="action1">
+		<h3>Please Enter Application details below</h3>
+		ORG Name to use / create: <input type='text' name='ORGName'><br>
+        SPACEName to use / create: <input type='text' name='SPACEName'><br>
+		ORG Role: <input type='password' name='ORGRole'><br>
+		SPACE Role: <input type='password' name='SPACERole'><br>
+        <input type="submit" name="action2">
+      </form>
+<script>
+</script>
+</body>
+</html>
+

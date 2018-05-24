@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>BOT</title>
+    <script>
+        var bot = {{ bot }}
+    </script>
+        <style type="text/css">
+.chat-box{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.box{
+    transition: height .6s ease-out;
+    width: 300px;
+    height: 0px;
+    background: blue;
+    z-index: 9999;
+}
+.open .box{
+  height:400px;
+      transition: height .6s ease-out;
+}
+.open {
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #3F51B5;
+    background: #673AB7;
+    color: #eaeaea;
+}
+
+        </style>
+  </head>
+  <body>
+  <div class="chat-box">
+  <div class="open">Click to Chat
+  <div class="box">
+    <br>
+     <form method='post'>
+        Human: <input type='text' name='human'><br>
+        Bot: {{ bot }}<br>
+        <input type="submit" name="action"> 
+		<h3>Please Enter Enviromental details below</h3>
+<p><a href="{{ url_for('popup_onclick') }}">Input Env and App Details</a></p>
+	    </form>
+    <br>
+  </div>
+    </div>
+</div>
+<script>
+</script>
+  </body>
+</html>
+
